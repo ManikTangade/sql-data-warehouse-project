@@ -18,7 +18,7 @@ WARNING:
 USE master;
 GO
 
---Drop and recreate the DataWarehouse'
+-- Drop and recreate the DataWarehouse'
 IF EXISTS (SELECT 1 FROM sys.database WHERE name = 'DataWarehouse')
 BEGIN
 	ALTER DATABASE Datawarehouse SET SINGLE USER WITH ROLLBACK IMMIDIATE;
